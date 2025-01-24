@@ -1,0 +1,96 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg, #010758, #490d61);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    color: #fff;
+    position: relative;
+}
+
+.hero h1 {
+    margin-top: -50px;
+    margin-bottom: 50px;
+    font-size: 45px;
+    font-weight: 500;
+}
+
+.hero h1 span {
+    color: rgb(214, 76, 99);
+}
+
+.hero h1::after{
+    content: ' ';
+    width: 188px;
+    height: 2px;
+    background-color: #fff;
+    top: 26%;
+    left: 60%;
+    position: absolute;
+}
+
+textarea {
+    width: 600px;
+    height: 250px;
+    background-color: #403d84;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    font-size: 15px;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    resize: none;
+}
+
+textarea::placeholder {
+    font-size: 16px;
+    color: #ddd;
+}
+
+.btn {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn select {
+    flex: 1;
+    background-color: #403d84;
+    color: #ddd;
+    padding: 10px 20px;
+    border-radius: 30px;
+    appearance: none;
+    background-image: url("dropdown.png");
+    background-repeat: no-repeat;
+    background-size: 14px;
+    background-position-x: calc(100% - 20px);
+    background-position-y: 12px;
+}
+
+.btn button {
+    background-color: rgb(214, 76, 99);
+    color: #fff;
+    padding: 10px 24px;
+    border: 0;
+    outline: 0;
+    border-radius: 30px;
+    cursor: pointer; 
+    display: flex;
+    align-items: center;
+}
+
+.btn button img {
+    width: 10px;
+    margin-right: 10px;
+}
